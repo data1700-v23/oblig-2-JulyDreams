@@ -4,7 +4,7 @@ OsloMet brukernavn: s374978
 
 GitHub brukernavn: JulyDreams
 
-Github repo URL: https://github.com/data1700-v23/oblig-2-JulyDreams.git
+Github repo URL: https://github.com/data1700-v23/oblig-2-JulyDreams
 
 Fullt navn: Iuliana Tarnovschi
 
