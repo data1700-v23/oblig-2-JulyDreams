@@ -1,6 +1,7 @@
 package oslomet.webprog.oblig2;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class BilettController {
     public void lagreBiletter(Biletter innBilett){
         alleBiletter.add(innBilett);
     }
-    @GetMapping("/hentAlle")
+    @PostMapping("/hentAlle")
     public ArrayList<Biletter> hentAlle(){
         return alleBiletter;
     }

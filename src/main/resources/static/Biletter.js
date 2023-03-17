@@ -24,12 +24,7 @@ function regBilett(){
 
     let feil = "Må skrive noe inn i ";
     let teller = 0;
-    
-    if(teller == 0){
-        $.get("/lagre", bilett, function(){ //bilett blir gjort om til json
-            hentAlle(); //for å kjøre denne trengs function() nested
-        });
-    }
+
     if (velgfilm =="Velg film her"){
         teller++;
         $("#feilVelgFilm").html("Du må velge en film.");
@@ -66,10 +61,17 @@ function regBilett(){
     }else{
         $("#feilEpost").html("");
     }
+
+    if(teller == 0) {
+        $.get("/lagre", bilett, function () { //bilett blir gjort om til json
+            hentAlle(); //for å kjøre denne trengs function() nested
+        });
+    }
+
 }
 
 function hentAlle(){ //funcksjonen kaller server metoden /hentAlle
-    $.get("/hentAlle", function (data){ //varibelen data mottar data fra server
+    $.post("/hentAlle", function (data){ //varibelen data mottar data fra server
         formaterData(data); //kaller på funksjonen formaterData()
     });
 

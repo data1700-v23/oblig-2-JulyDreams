@@ -16,5 +16,3 @@ Funksjonen sender "bilett"-objektet til serveren med get-"/lagre" der legges hve
 alle bilettene lagret på serveren og viser dem på nettsiden i span med id="alleBilettene". 
 Når knappen "Slett alle bilettene" er trykket blir funksjonen slettAlt kalles og den sender get forespørsel til server at 
 den skal slette alt som ligger i "alleBillettene"-id og arrayet blir slettet i controlleren.
-Det er en liten feil: når jeg skriver inn kun antall lagres det et array og skrives ut på nettsiden selv om kravet er at alle 
-felt skal være fylt ut- snakket med en TA som sa det går fint å levere med denne feilen, vi fant ikke ut av det.
